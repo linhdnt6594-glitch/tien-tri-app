@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔮 TECH ORACLE 2026 - Đại Pháp Sư Thùy Linh</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="universe-bg"></div>
+    
+    <header class="header">
+        <div class="container">
+            <h1 class="title">🔮 TECH ORACLE 2026</h1>
+            <p class="subtitle">Đại Pháp Sư Thùy Linh - Bói Toán Định Mệnh Công Nghệ</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- User Information Section -->
+            <section class="user-info">
+                <div class="info-card">
+                    <h3>📝 THÔNG TIN CỦA BẠN</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="userName">Tên của bạn:</label>
+                            <input type="text" id="userName" placeholder="Nhập tên của bạn">
+                        </div>
+                        <div class="form-group">
+                            <label for="userBirthday">Ngày sinh:</label>
+                            <input type="date" id="userBirthday">
+                        </div>
+                        <div class="form-group">
+                            <label for="userZodiac">Cung hoàng đạo:</label>
+                            <select id="userZodiac">
+                                <option value="">Chọn cung hoàng đạo</option>
+                                <option value="Bạch Dương">Bạch Dương (21/3 - 19/4)</option>
+                                <option value="Kim Ngưu">Kim Ngưu (20/4 - 20/5)</option>
+                                <option value="Song Tử">Song Tử (21/5 - 20/6)</option>
+                                <option value="Cự Giải">Cự Giải (21/6 - 22/7)</option>
+                                <option value="Sư Tử">Sư Tử (23/7 - 22/8)</option>
+                                <option value="Xử Nữ">Xử Nữ (23/8 - 22/9)</option>
+                                <option value="Thiên Bình">Thiên Bình (23/9 - 22/10)</option>
+                                <option value="Bọ Cạp">Bọ Cạp (23/10 - 21/11)</option>
+                                <option value="Nhân Mã">Nhân Mã (22/11 - 21/12)</option>
+                                <option value="Ma Kết">Ma Kết (22/12 - 19/1)</option>
+                                <option value="Bảo Bình">Bảo Bình (20/1 - 18/2)</option>
+                                <option value="Song Ngư">Song Ngư (19/2 - 20/3)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Crystal Ball Section -->
+            <section class="crystal-section">
+                <div class="crystal-container">
+                    <div class="crystal-ball" id="crystalBall">
+                        <div class="crystal-inner">
+                            <div class="crystal-glow"></div>
+                            <div class="crystal-stars"></div>
+                            <div class="crystal-mist"></div>
+                        </div>
+                        <div class="crystal-base"></div>
+                    </div>
+                    <div class="crystal-status" id="crystalStatus">
+                        🔮 Quả cầu pha lê đang chờ...
+                    </div>
+                </div>
+            </section>
+
+            <!-- Oracle Buttons Section -->
+            <section class="oracle-buttons">
+                <div class="buttons-grid-6">
+                    <!-- Row 1 -->
+                    <button class="oracle-btn neon-pink" data-category="vận_may" data-color="#FF1493">
+                        <div class="btn-icon">🌟</div>
+                        <div class="btn-text">VẬN MAY</div>
+                        <div class="btn-glow" style="background: linear-gradient(45deg, #FF1493, #FF69B4);"></div>
+                    </button>
+                    
+                    <button class="oracle-btn neon-blue" data-category="tình_duyên" data-color="#00CED1">
+                        <div class="btn-icon">💕</div>
+                        <div class="btn-text">TÌNH DUYÊN</div>
+                        <div class="btn-glow" style="background: linear-gradient(45deg, #00CED1, #20B2AA);"></div>
+                    </button>
+                    
+                    <button class="oracle-btn neon-green" data-category="sự_nghiệp" data-color="#00FF00">
+                        <div class="btn-icon">🚀</div>
+                        <div class="btn-text">SỰ NGHIỆP</div>
+                        <div class="btn-glow" style="background: linear-gradient(45deg, #00FF00, #32CD32);"></div>
+                    </button>
+                    
+                    <!-- Row 2 -->
+                    <button class="oracle-btn neon-yellow" data-category="tiền_tài" data-color="#FFD700">
+                        <div class="btn-icon">💰</div>
+                        <div class="btn-text">TIỀN TÀI</div>
+                        <div class="btn-glow" style="background: linear-gradient(45deg, #FFD700, #FFA500);"></div>
+                    </button>
+                    
+                    <button class="oracle-btn neon-orange" data-category="sức_khỏe" data-color="#FF8C00">
+                        <div class="btn-icon">💪</div>
+                        <div class="btn-text">SỨC KHỎE</div>
+                        <div class="btn-glow" style="background: linear-gradient(45deg, #FF8C00, #FF6347);"></div>
+                    </button>
+                    
+                    <button class="oracle-btn neon-purple" data-category="vũ_trụ" data-color="#9370DB">
+                        <div class="btn-icon">🌌</div>
+                        <div class="btn-text">VŨ TRỤ GỬI THÔNG ĐIỆP</div>
+                        <div class="btn-glow" style="background: linear-gradient(45deg, #9370DB, #8A2BE2);"></div>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Oracle Result Section -->
+            <section class="oracle-result" id="oracleResult" style="display: none;">
+                <div class="destiny-card">
+                    <div class="card-header">
+                        <h2 id="resultCategory">THẺ BÀI ĐỊNH MỆNH</h2>
+                        <div class="card-time" id="resultTime"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="oracle-text" id="oracleText"></div>
+                        <div class="thuy-linh-message" id="thuyLinhMessage">
+                            <strong>🌟 Lời nhắn từ Đại Pháp Sư Thùy Linh:</strong>
+                            <p id="thuyLinhText"></p>
+                        </div>
+                        <div class="oracle-user-info">
+                            <p><strong>Người xem:</strong> <span id="resultName"></span></p>
+                            <p><strong>Ngày sinh:</strong> <span id="resultBirthday"></span></p>
+                            <p><strong>Cung hoàng đạo:</strong> <span id="resultZodiac"></span></p>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="action-btn" onclick="shareOracle()">📤 Chia sẻ</button>
+                        <button class="action-btn" onclick="viewHistory()">📜 Lịch sử</button>
+                        <button class="action-btn" onclick="newReading()">🔄 Xem mới</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- History Section -->
+            <section class="history-section" id="historySection" style="display: none;">
+                <div class="history-card">
+                    <h2>📜 LỊCH SỬ XEM QUẺ</h2>
+                    <div class="history-content" id="historyContent">
+                        <p>Đang tải lịch sử...</p>
+                    </div>
+                    <button class="close-btn" onclick="closeHistory()">✕ Đóng</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="neon-footer-text">🔮 TECH ORACLE 2026 - Đại Pháp Sư THÙY LINH</p>
+            <p>© 2026 - Đại Pháp Sư THÙY LINH</p>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>🔮 Đang kết nối với vũ trụ...</p>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification" style="display: none;"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
