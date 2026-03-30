@@ -365,7 +365,7 @@ if __name__ == '__main__':
         app.run(host='0.0.0.0', port=port, debug=False)
     else:
         # Local development
-        print("🔮 BẮT ĐẦU TECH ORACLE 2026 - ĐẠI PHÁP SƯ THÙY LINH...")
+        print("🔮 TECH ORACLE 2026 - DAI PHAP SU THUY LINH...")
         print("🌐 Server available at: http://localhost:5000")
         
         # Create necessary directories
